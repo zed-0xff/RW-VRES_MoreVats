@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>More Hemogen Vats</name>
+  <author>zed_0xff</author>
+  <packageId>zed.0xff.VRES.MoreVats</packageId>
+  <url>https://github.com/zed-0xff/RW-VRES_MoreVats</url>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <description>Different capacity vats for Vanilla Races Expanded - Sanguophage
+
+[list]
+[*] Increases Hemogen Vat capacity from 200 to 500 packs
+[*] adds small 1x1 vat with capacity 100
+[*] adds large 3x3 vat with capacity 1200
+[/list]
+
+XML only.
+Should be compatible with everything.
+</description>
+  <modDependencies>
+    <li>
+      <packageId>vanillaracesexpanded.sanguophage</packageId>
+      <displayName>Vanilla Races Expanded - Sanguophage</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2963116383</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>brrainz.harmony</li>
+    <li>vanillaracesexpanded.sanguophage</li>
+  </loadAfter>
+</ModMetaData>

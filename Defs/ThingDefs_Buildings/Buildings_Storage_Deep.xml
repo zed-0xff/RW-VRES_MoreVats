@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VRE_HemogenVat_Small</defName>
+		<label>small hemogen vat</label>
+		<description>An industrial liquid storage vat meant for storing hemogen delivered via hemogen pipe network. Vats can be designated to be siphoned for usable hemogen as needed.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Building/VRE_HemogenVat</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.40</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>50</Steel>
+			<Gold>5</Gold>
+		</costList>
+		<comps>
+			<li Class="PipeSystem.CompProperties_ResourceStorage">
+				<pipeNet>VRE_HemogenNet</pipeNet>
+        <storageCapacity>100</storageCapacity>
+        <barSize>(0.36, 0.10)</barSize>
+        <margin>0.03</margin>
+        <centerOffset>(0, 0, -0.36)</centerOffset>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Biotech</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>Deathrest</li>
+    </researchPrerequisites>
+    <uiIconScale>0.5</uiIconScale>
+    <uiOrder>2210</uiOrder>
+  </ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>VRE_HemogenVat_Large</defName>
+		<label>large hemogen vat</label>
+		<description>An industrial liquid storage vat meant for storing hemogen delivered via hemogen pipe network. Vats can be designated to be siphoned for usable hemogen as needed.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Building/VRE_HemogenVat</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.5,4.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.40</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>1600</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,3)</size>
+		<costList>
+			<Steel>360</Steel>
+			<Gold>40</Gold>
+		</costList>
+		<comps>
+			<li Class="PipeSystem.CompProperties_ResourceStorage">
+				<pipeNet>VRE_HemogenNet</pipeNet>
+        <storageCapacity>1200</storageCapacity>
+        <barSize>(1.12, 0.30)</barSize>
+        <margin>0.07</margin>
+        <centerOffset>(0, 0, -1.0)</centerOffset>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Biotech</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>Deathrest</li>
+		</researchPrerequisites>
+    <uiOrder>2212</uiOrder>
+	</ThingDef>
+  
+</Defs>
